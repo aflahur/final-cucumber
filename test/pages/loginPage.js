@@ -11,6 +11,10 @@ class LoginPage {
         return $('/html/body/div/div/div/div/div[2]/div/button');
     }
 
+    get emailAlert() {
+        return$('//*[@id="root"]/div/div/div/div[2]/div/div[1]');
+    }
+
     async open() {
         await browser.url('https://kasirdemo.belajarqa.com/');
     }
